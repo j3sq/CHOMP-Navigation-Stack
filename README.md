@@ -1,4 +1,7 @@
 # CHOMP Based Navigation Stack for Turtlebot
+![alt tag](https://cloud.githubusercontent.com/assets/9220666/10293485/08b91ef4-6bb5-11e5-8c23-2681b399a191.png)
+##  
+
 ROS Navigation stack for Turtlebot utilizing [CHOMP][] for trajectory generation and [Pose Feedback Controller][] for robot control. This is built as a part of Cargo-ANTS projects and utilize several packages from the project.
 
 ## Build and Run:
