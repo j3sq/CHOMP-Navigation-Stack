@@ -18,7 +18,7 @@ roslaunch chomp_nav chomp_nav_demo.launch
 ```
 You should see Gazebo simulator running with Turtlebot and some obstacles (construction barrels). To change current goal move the traffic cone.
 ## Issues:
-- Visulation of trajectory points is a bit messy. The goal markers are updated via SetModelState service but Gazebo is dropping some calls.
+- Visualization of trajectory points is messy. The goal markers are updated via SetModelState service but Gazebo is dropping some calls.
 - Trajectory is generated only when the goal point is changed (by moving the traffic cone). Moving obstacles will not update trajectory even if the obstacle collides with the current trajectory.
 - Turtlebot can spin out of control while executing high curvature maneuvers. This can be addressed at the trajectory generation level (by setting constrains on curvature) or at Pose Feedback level (by linking Robot linear velocity with curvature).
 
