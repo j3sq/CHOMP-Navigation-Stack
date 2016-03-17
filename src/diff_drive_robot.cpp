@@ -111,7 +111,10 @@ double DiffDriveRobot::distance_to_goal(Goal const &goal) const{
 }
 
 Goal DiffDriveRobot::get_goal(size_t idx) const{
-		//TODO: add some index check to make sure we are not out of bounds
+		if (idx>= goals_.size()){
+			Goal dummy;
+			return dummy;
+		}
 		return goals_[idx];
 }
 
