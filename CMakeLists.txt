@@ -6,6 +6,7 @@ project(chomp_nav)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  cargo_ants_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -100,7 +101,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES turtlebot_controller
-#  CATKIN_DEPENDS roscpp
+   CATKIN_DEPENDS roscpp cargo_ants_msgs
 #  DEPENDS system_lib
 )
 

@@ -1,3 +1,4 @@
+<!-- chomp -->
 <launch>
   <arg name="world_file"  default="$(find chomp_nav)/world/demo_world.sdf"/>
 
